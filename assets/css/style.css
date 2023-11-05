@@ -1,0 +1,159 @@
+@import url("https://fonts.googleapis.com/css2?family=Teko:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Quicksand:400,700&display=swap");
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+body {
+  background-color: #f0f0f0;
+  font-family: "Quicksand", sans-serif;
+}
+.logo p {
+  font-size: 50px;
+  font-style: italic;
+  color: #213555;
+  font-family: "Teko", sans-serif !important;
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #e5d283;
+  position: sticky;
+  right: 0;
+  left: 0;
+  top: 0;
+}
+nav ul {
+  display: flex;
+  gap: 20px;
+}
+nav ul li {
+  list-style: none;
+}
+nav ul li a {
+  color: #213555;
+  font-weight: bolder;
+  text-decoration: none;
+  font-family: "Inter", sans-serif;
+}
+nav ul li a:hover {
+  font-size: 25px;
+  cursor: pointer;
+}
+main {
+  padding: 20px;
+  display: flex;
+  gap: 1.5rem;
+}
+#content {
+  flex: 5;
+  display: flex;
+  flex-flow: column nowrap;
+  gap: 1rem 2rem;
+}
+.card {
+  box-shadow: 0 2px 8px 2px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  padding: 20px;
+}
+footer {
+  background-color: #e5d283;
+  padding: 20px;
+  text-align: center;
+  font-weight: bolder;
+  color: #213555;
+  font-family: "Inter", sans-serif;
+}
+.content-tentang {
+  display: flex;
+  align-items: center;
+}
+.content-tentang img {
+  width: 200px;
+  max-height: 400px;
+  object-fit: cover;
+  border-radius: 2rem;
+  margin: 10px;
+}
+.D-flex {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.item-img {
+  width: 100%;
+  max-height: 500px;
+  object-fit: cover;
+  object-position: center;
+}
+aside {
+  flex: 1;
+}
+.profile img {
+  width: 100px;
+}
+.profile header {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.profile section {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.profile {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.btn {
+  width: 100%;
+  background-color: #e5d283;
+  color: #213555;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+}
+.btn:hover {
+  background-color: #213555;
+  color: #e5d283;
+}
+@media screen and (max-width: 1000px) {
+  #content,
+  aside {
+    width: 100%;
+    padding: 0;
+  }
+}
+@media screen and (max-width: 1200px) {
+  main {
+    flex-flow: column nowrap;
+  }
+  main aside {
+    align-self: center;
+  }
+}
+@media screen and (max-width: 768px) {
+  nav ul {
+    justify-content: center;
+  }
+ 
+  main aside {
+    align-self: stretch;
+  }
+  .header {
+    display: flex;
+    flex-direction: column;
+  }
+  .content-tentang {
+    display: flex;
+    flex-direction: column;
+    overflow: auto;
+  }
+};
